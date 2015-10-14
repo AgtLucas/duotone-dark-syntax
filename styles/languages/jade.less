@@ -1,13 +1,14 @@
 // Jade
 
 .jade {
-  &.source {
-    .uno-4();
-  }
-  &.at-rule {
-    .uno-1();
-    .keyword.punctuation {
-      color: inherit;
+  .at-rule {
+    &,
+    > .punctuation {
+      .uno-1();
     }
+  }
+  .mixin > .variable,
+  .include > .variable {
+    .duo-2();
   }
 }
